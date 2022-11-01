@@ -1,0 +1,144 @@
+/*font-family: 'Open Sans', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    background-color: green;
+}
+.h1,h2{
+    font-family: 'Open Sans', sans-serif; 
+}
+.hero{
+    background: url(../images/siroo.jpg) no-repeat;
+    background-size:cover ;
+    height: 50vh;
+    min-height: 800px;
+    color: white ;
+}
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+
+}
+.card{
+    width: 100%;    
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor:default;
+    transition: all 400ms ease;
+
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4)    ;
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+
+}
+.card.contenido p {
+    line-height: 1.5;
+    color: #6a6a6a;
+
+
+}
+.card.contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px ;
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    
+}
+.card .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+.slide{
+    margin-top: 10px;
+}
+.slide img{
+    height: 65vh;
+}
+.mapa iframe{
+    width: 100%;
+    aspect-ratio: 1.2;
+}
+html{
+    scroll-behavior: smooth;
+}
+.p1{
+    text-indent: 2em;
+}
+
+.lista-nosotros{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ 
+ }
+ 
+ .lista-nosotros li{
+     margin: 4px 0;
+ }
+ .lista-nosotros li a {
+     background-color: #fff;
+     font-family: "Alfa Slab One", cursive;
+     text-decoration: none;
+     font-size: 1.2rem;
+     color: #a0a0a0;
+     transition: all .2s ease-in-out;
+     display: block;
+ }
+ .lista-nosotros li a:hover {
+     color: #212521;
+     background-color: #dadada;
+ }
+ .lista-nosotros li a img{
+     width: 120px;
+     height: 50px;
+     filter: grayscale();
+     transition: all .2s ease-in-out;
+     margin-right: 1rem ;
+     opacity: 0.7;
+ }
+ .lista-nosotros li a:hover img{
+     filter: none;
+     margin-right: 1.4rem;
+     opacity: 1;
+ }
+ /* fin novedades*/
+ /*testimonios*/
+ .testimonios{
+    background-color: #dadada;
+    padding-bottom: 4rem !important;
+
+}
+.testimonios{
+    text-align: center;
+    padding: 50px 20px;
+  
+}
+
+
+
+
+

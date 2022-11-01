@@ -1,0 +1,217 @@
+<div class="container-fluid">
+    <div id="home" class="row align-items-center hero">
+        <div class="col-lg-3 offset-lg-1">
+            <p>Bajada</p>
+            <h1>Titulo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste laboriosam veritatis nisi eveniet
+                deleniti deserunt vel? Pariatur quia voluptatum suscipit laudantium ut dignissimos cum ullam omnis?
+                Consectetur itaque qui ea!</p>
+        </div>
+
+    </div>
+
+    <div class="row my-3">
+        <div id="novedades" class="col-md-5 offset-md-2 py-3">
+
+            <h2>Novedades</h2>
+            <ul class="lista-nosotros">
+
+                {{#each novedades}}
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img
+                            src="{{imagen}}" width="120">{{titulo}}</a>
+                </li>
+                {{/each}}
+
+
+            </ul>
+
+        </div>
+
+        <div class="col-md-3 my-3">
+            <div class="rounded py-5 testimonios">
+                <h2 class="text-center">Testimonios</h2>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonio">
+                                <h5>"Los Mejores Ploteando!!"</h5>
+                                <p>Gonzalo, Buenos Aires</p>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonio">
+                                <h5>"Los Mejores Lavando!!"</h5>
+                                <p>Luis, Buenos Aires</p>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonio">
+                                <h5>"Nos salvaron el auto unos genios!!"</h5>
+                                <p>Roberto, Buenos Aires</p>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="container" id="servicio">
+        <div class="card">
+            <figure>
+                <img src="images/cromado-violeta.jpg">
+            </figure>
+            <div class="contenido">
+                <h3>Ploteados</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore molestias repellat ab aliquam sunt
+                    labore blanditiis veniam? Eius, sunt velit!</p>
+
+            </div>
+
+        </div>
+        <div class="card">
+            <figure>
+                <img src="images/esponja.jpg">
+            </figure>
+            <div class="contenido">
+                <h3>Lavados</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est facilis magnam vitae dignissimos ullam
+                    libero voluptates rerum voluptatum aliquid a. </p>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <figure>
+                <img src="images/mecanico.jpg">
+            </figure>
+            <div class="contenido">
+                <h3>Electricidad Y Mecanica</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam non vel harum velit porro
+                    deleniti
+                    rem
+                    error, libero obcaecati enim?</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="conocenos" class="row py-4">
+        <div class="col-md-4 offset-md-2">
+            <h2>Visitanos</h2>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.2928589284757!2d-58.84412154949311!3d-34.49545905918861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9bc4e98fd58b%3A0xcc23547833ff2bf1!2sPedro%20Medrano%20951%2C%20B1635%20Pres.%20Derqui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1663710333048!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-md-4 mt-4 mt-sm-0">
+            <h2>Contactanos</h2>
+            <form class="row g-3" action="/" method="post">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido">
+
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="email@email.com" name="email">
+
+                </div>
+                <div class="col-12">
+                    <label for="tel" class="form-label">Tel</label>
+                    <input type="tel" class="form-control" id="tel" placeholder="..." name="tel">
+
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" name="mensaje"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+
+                </div>
+            </form>
+            <p>{{message}}</p>
+        </div>
+    </div>
+    <div id="historia" class="row align-items-center py-4">
+        <div class="col-lg-2 col-md3- offset-lg-2 d-none d-sm-block">
+            <img src="images/tallermecanico.jpg" class="img-fluid">
+
+        </div>
+        <div class="col-lg-2 col-md-3 d-none d-sm-block">
+            <img src="images/taller-mecanico-coches_750x-1.jpg" alt="historia" class="img-fluid">
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+            <h2>Historia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, architecto tenetur eos ratione
+                doloremque, laboriosam, ut iusto eligendi dicta nulla blanditiis accusantium debitis culpa amet
+                voluptatibus consectetur dolore! Vitae, optio.</p>
+
+        </div>
+        <!-- Modal -->
+        {{#each novedades}}
+        <div class="modal fade" id="Modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Lo Nuevo del Mes</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    </div>
+                    <div class="modal-body">
+                        <h3>{{titulo}}</h3>
+                        <img src="{{imagen}}" >
+                        <p>{{cuerpo}} </p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>{{/each}}
+
+    </div>
+</div>
